@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import { Toaster } from "react-hot-toast";
 import { AuthProvider } from "@/providers/auth";
 import { StoreProvider } from "@/providers/store";
+import ChatwootWidget from "@/components/bot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,7 +58,7 @@ export default function RootLayout({
             />
             <Header />
             {children}
-            <PopupChatBot />
+            <ChatwootWidget/>
             <Footer />
           </AuthProvider>
         </StoreProvider>
