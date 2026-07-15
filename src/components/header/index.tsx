@@ -50,7 +50,7 @@ const Header = () => {
     const navLinks = [
         { to: '/', text: 'Home' },
         { to: '/projects', text: 'Projects' },
-        { to: '/workshops', text: 'Profile' },
+        { to: '/workshops', text: 'Workshops' },
         
         { to: '/about', text: 'About' },
         ...(studentLogged || instituteLogged ? [{ to: '/profile', text: 'Profile' }] : []),

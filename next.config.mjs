@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
-export const nextConfig = {
+const nextConfig = {
     images: {
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'bvczkuznkssqorwifgza.supabase.co',
+          hostname: '*.supabase.co',
           port: '',
           pathname: '/**',
         },
@@ -18,5 +18,7 @@ export const nextConfig = {
       // Ignore TypeScript errors during build
       ignoreBuildErrors: true,
     },
-  };
+};
+
+export default nextConfig;
   

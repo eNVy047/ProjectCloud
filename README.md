@@ -1,48 +1,90 @@
 # ProjectCloud 🚀
-Project Cloud is an open-source platform that connects students and educational institutes, facilitating project sharing and event discovery.
 
-## 🌟 Features
+Project Cloud is a modern, open-source collaborative platform that bridges the gap between students and educational institutions. It facilitates seamless project sharing, workshop discovery, and concurrent live-session management.
 
-- **Project Showcase**: Students can upload and share their projects
-- **Event Hub**: Institutes can post information about seminars, workshops, and other events
-- **Open Access**: No login required to view projects or workshops
-- **User Accounts**: Login to upload projects or post events
-- **Live Session Integration**:Enabling users to engage in tasks concurrently for efficient project management
-- **Interactive Chatbot Support**:assisting new users in real-time to address queries and challenges effectively
-- **Easy-to-understand interface**:simplifying navigation and usability for seamless user interaction
-- **Profile analytics**:offering insights into user behavior and preferences to tailor the platform for personalized experiences
+---
+
+## 🌟 Key Features
+
+*   **Project Showcase**: Students can easily upload, document, and share their academic or personal projects.
+*   **Event & Workshop Hub**: Educational institutes can post seminars, workshops, bootcamps, and guest lectures.
+*   **Live Session Integration**: Engage in workshops concurrently with real-time interactive stream status, concurrent task lists, and live chat.
+*   **Interactive Chatbot Support**: Embedded support chat widget to assist new users in real-time.
+*   **Aesthetic & Modern UI**: Built with responsive layouts, curated dark mode styling, and smooth animations using Framer Motion.
+*   **Open Access**: Explore projects and workshop information freely without requiring a prior user account.
+
+---
 
 ## 🛠️ Tech Stack
 
-- Next.js
-- Tailwind CSS
-- Supabase
+*   **Framework**: [Next.js](https://nextjs.org/) (App Router)
+*   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+*   **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)
+*   **Database & Auth**: [Supabase](https://supabase.com/)
+*   **Animations**: [Framer Motion](https://www.framer.com/motion/)
+
+---
 
 ## 🚀 Getting Started
 
-1. Clone the repository:
-``` git clone https://github.com/eNVy047/ProjectCloud.git```
-2. Install dependencies:
-```cd ProjectCloud```
-```npm install```
+### Prerequisites
 
-4. Set up Supabase:
-    - Create a Supabase project
-    - Copy the .env.example file to .env.local and fill in your Supabase credentials
-5. Run the development server:
-```npm run dev```
-6. Open http://localhost:3000 in your browser
-   
-## create .env.local in 
-NEXT_PUBLIC_SUPABASE_URL="https://zlrmudpaeihldcsfigwh.supabase.co"
-NEXT_SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpscm11ZHBhZWlobGRjc2ZpZ3doIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQ1MDA5OTgsImV4cCI6MjA0MDA3Njk5OH0.OW6tv8nTQy4IUwz6_nwZFgQMNQsCyrWhOSspoXJDSeY"
+*   [Node.js](https://nodejs.org/) (v20 or higher recommended)
+*   [npm](https://www.npmjs.com/) or another preferred package manager
 
+### Local Installation & Setup
+
+1.  **Clone the Repository**:
+    ```bash
+    git clone https://github.com/eNVy047/ProjectCloud.git
+    cd ProjectCloud
+    ```
+
+2.  **Install Dependencies**:
+    ```bash
+    npm ci
+    ```
+
+3.  **Environment Configuration**:
+    Create a `.env.local` file in the root directory and configure your Supabase project parameters:
+    ```env
+    NEXT_PUBLIC_SUPABASE_URL="https://your-project-id.supabase.co"
+    NEXT_SUPABASE_ANON_KEY="your-supabase-anon-key"
+    ```
+
+4.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+---
+
+## 🐳 Run using Docker
+
+To containerize and run the application in a clean, reproducible production-like environment:
+
+1.  **Build the Docker Image**:
+    ```bash
+    docker build -t project-cloud .
+    ```
+
+2.  **Run the Container**:
+    ```bash
+    docker run -p 3000:3000 --env-file .env.local project-cloud
+    ```
+
+---
 
 ## 🤝 Contributing
--> Narayan Verma
-->Ayush Kukrety
-->Rohit Maurya
-->Utkarsh Singh Parihar
 
+We welcome contributions! Special thanks to the main contributors:
+
+*   **Narayan Verma**
+*   **Ayush Kukrety**
+*   **Rohit Maurya**
+*   **Utkarsh Singh Parihar**
+
+---
 
 Happy coding! 💻✨

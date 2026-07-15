@@ -45,7 +45,7 @@ const index: React.FC = () => {
                             transition={{ delay: 0.3 }}
                             className="text-lg md:text-lg lg:text-xl font-serif mt-2"
                         >
-                            <p>We are glad, You're Here</p>
+                            <p>We are glad, You&apos;re Here</p>
                             <p></p>
                         </motion.div>
                     </div>
